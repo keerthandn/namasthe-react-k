@@ -1,10 +1,11 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 const heading = React.createElement(
   "h1",
   { id: "heading" }, // adding attributes to tag (3 & 4 props)
   "Hello from react" // children
 );
 console.log(heading); //object not a tag
-
 {
   /* <div id="parent">
   <div id="child">
