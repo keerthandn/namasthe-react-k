@@ -1,0 +1,13 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  /* padding: 10px; */
+  margin: 10;
+}
+
+.filter {
+  margin-left: 30;
+}
+.filte-btn {
+  cursor: pointer;
+}

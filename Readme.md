@@ -27,3 +27,17 @@ npx parcel build index.html
 - Https
 - Tree Shaking - remove unused code
 - Different dev and prod bundles
+
+## Namsthe Food
+
+// Header
+// - Logo
+// - Nav Item
+// Body
+// - Search Section
+// - Card container
+// - Resto Cards
+// Footer
+// - Copyright
+// - Links
+// - Contact

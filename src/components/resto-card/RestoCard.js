@@ -1,11 +1,13 @@
 import "./resto-card.css";
+import { CDN_URL } from "../../utils/constant";
+
 const RestoCard = ({ resData }) => {
   const { name, avgRating, cuisines, cloudinaryImageId } = resData?.info;
   return (
     <div className="resto-card">
       <div className="img-container">
         <img
-          src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`}
+          src={`${CDN_URL}${cloudinaryImageId}`}
           width="100"
           height="100"
           alt="card"

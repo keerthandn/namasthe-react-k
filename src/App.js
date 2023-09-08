@@ -1,19 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./components/Header";
-import Body from "./components/Body";
-
-// Header
-//   - Logo
-//   - Nav Item
-// Body
-//   - Search Section
-//   - Card container
-//     - Resto Cards
-// Footer
-//   - Copyrigh
-//   - Links
-//   - Contact
+import Header from "./components/header/Header";
+import Body from "./components/body/Body";
 
 const AppLayout = () => {
   return (

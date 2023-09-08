@@ -1,7 +1,6 @@
-import RestoCard from "./RestoCard";
+import RestoCard from "../resto-card/RestoCard";
 import "./resto-container.css";
-import { restaurants } from "./data.js";
-const RestoContainer = () => {
+const RestoContainer = ({ restaurants }) => {
   return (
     <div className="resto-container">
       {restaurants.map((item) => {
