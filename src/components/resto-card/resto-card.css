@@ -1,6 +1,6 @@
 .resto-card {
   width: 185;
-  height: 200;
+  height: 230;
   padding: 10px;
   margin: 5;
 }
@@ -24,4 +24,8 @@ img {
 .resto-card:hover {
   border: 1px solid black;
   cursor: pointer;
+}
+
+.cuisine > p {
+  word-wrap: break-word;
 }

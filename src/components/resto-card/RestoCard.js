@@ -17,7 +17,9 @@ const RestoCard = ({ resData }) => {
       <div className="starRate">
         <span>{avgRating} star</span>
       </div>
-      <p>{cuisines.join(",")}</p>
+      <div className="cuisine">
+        <p>{cuisines.join(",")}</p>
+      </div>
     </div>
   );
 };

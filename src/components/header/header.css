@@ -20,3 +20,16 @@
 .nav-items > ul > li {
   padding: 10px;
 }
+
+.btn {
+  width: 50px;
+  padding: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(194, 194, 193);
+  border-radius: 5;
+  color: white;
+}

@@ -5,9 +5,31 @@
   margin: 10;
 }
 
-.filter {
-  margin-left: 30;
+.body-header {
+  display: flex;
+  align-items: center;
 }
+
+/* .filter {
+} */
 .filte-btn {
+  padding: 2px;
   cursor: pointer;
 }
+
+.search {
+  padding: 10px;
+  margin-left: 20;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.search-btn {
+  margin-left: 5px;
+  width: 50px;
+  cursor: pointer;
+}
+/* .search > input {
+  border: none;
+} */
