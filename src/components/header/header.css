@@ -21,14 +21,14 @@
   padding: 10px;
 }
 
-.btn {
+.button {
   width: 50px;
   padding: 5px;
   border-style: none;
   cursor: pointer;
 }
 
-.btn:hover {
+.button:hover {
   background-color: rgb(194, 194, 193);
   border-radius: 5;
   color: white;

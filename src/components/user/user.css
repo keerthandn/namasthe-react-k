@@ -1,0 +1,13 @@
+.user-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.avatar {
+  width: 100px;
+}
+.avatar > img {
+  object-fit: contain;
+}
