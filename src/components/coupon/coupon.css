@@ -1,0 +1,23 @@
+.coupon-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coupon {
+  border: 0.5px solid lightgray;
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 300px;
+  padding: 10px;
+}
+
+.name {
+  color: grey;
+}
+
+.description {
+  color: grey;
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 5px;
+}

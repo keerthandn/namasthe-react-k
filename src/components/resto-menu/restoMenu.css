@@ -1,0 +1,122 @@
+.resto-menu-container {
+  margin: 20 120 5 120;
+}
+
+.resto-menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px dashed grey;
+  padding-bottom: 15px;
+}
+
+.cuisines {
+  font-size: 0.93rem;
+  color: #7e808c;
+  height: calc(0.93rem + 2px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+
+.image > img {
+  object-fit: contain;
+  color: green;
+}
+
+.avgRate {
+  padding-left: 5px;
+}
+.star-ratings {
+  display: flex;
+  padding-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  /* flex-direction: column; */
+}
+.ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  border: 1px solid lightgrey;
+  width: 90px;
+  height: 70px;
+  padding: 10;
+}
+
+hr {
+  width: 100px;
+  background-color: rgb(237, 234, 234);
+  height: 0.5px;
+  border: none;
+  border-bottom: 0.5px dashed grey;
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+}
+
+.time {
+  padding: 10px 15px 10px 0;
+  font-size: 22px;
+  font-weight: bold;
+  /* margin-top: 5px; */
+}
+
+.time > span {
+  padding-right: 10px;
+}
+
+.rupee {
+  background-color: #fff;
+  border: 1px solid black;
+  text-align: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  padding: 5px;
+}
+
+.cost-for-two {
+  display: flex;
+  align-items: center;
+}
+
+.cost-for-two > p {
+  padding-left: 5px;
+}
+
+.coupon-header {
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.food-type {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.collapsible-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsible-btn {
+  width: 100px;
+  border: none;
+  background-color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h5 {
+  font-weight: normal;
+  color: grey;
+  margin-bottom: 20px;
+}

@@ -21,6 +21,12 @@ img {
   width: 100%;
 }
 
+.name {
+  color: rgb(8, 8, 8);
+  font-weight: 600;
+  padding-top: 5px;
+}
+
 .resto-card:hover {
   border: 1px solid black;
   cursor: pointer;
@@ -28,4 +34,10 @@ img {
 
 .cuisine > p {
   word-wrap: break-word;
+  color: rgb(24, 24, 24);
+  padding-top: 5px;
+}
+.starRate {
+  color: rgb(24, 24, 24);
+  padding-top: 5px;
 }

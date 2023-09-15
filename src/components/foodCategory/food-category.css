@@ -1,0 +1,55 @@
+.food-category {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  padding-bottom: 10px;
+}
+
+.square {
+  /* border: 1px solid green; */
+  width: 8px;
+  height: 8px;
+  margin: 2px;
+  padding: 5px;
+  /* background-color: green; */
+}
+
+/* .dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+} */
+
+.money {
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid gray;
+  color: lightgreen;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.border {
+  height: 1px;
+  width: 100%;
+}
+
+.price {
+  font-size: 16px;
+}
+
+.message {
+  width: 85px;
+  font-size: 12px;
+}

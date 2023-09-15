@@ -13,7 +13,7 @@ const RestoCard = ({ resData }) => {
           alt="card"
         />
       </div>
-      <h3>{name}</h3>
+      <h3 className="name">{name}</h3>
       <div className="starRate">
         <span>{avgRating} star</span>
       </div>
