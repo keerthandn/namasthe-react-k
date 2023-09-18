@@ -2,7 +2,7 @@ import "./resto-card.css";
 import { CDN_URL } from "../../utils/constant";
 
 const RestoCard = ({ resData }) => {
-  const { name, avgRating, cuisines, cloudinaryImageId } = resData?.info;
+  const { name, avgRating, cuisines, cloudinaryImageId } = resData?.info || {};
   return (
     <div className="resto-card">
       <div className="img-container">

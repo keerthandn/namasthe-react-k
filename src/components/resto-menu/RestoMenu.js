@@ -1,29 +1,16 @@
-import { useEffect, useState } from "react";
 import Shimmer from "../shimmer/Shimmer";
 import "./restoMenu.css";
 import { useParams } from "react-router-dom";
-import { MENU_API } from "../../utils/constant";
 import star from "../../images/star.png";
 import Coupon from "../coupon/Coupon";
 import FoodCategory from "../foodCategory/FoodCategory";
 import Food from "../food/Food";
 import MenuFooter from "../menu-footer/MenuFooter";
+import useRestoMenu from "../../utils/useRestoMenu";
 
 const RestoMenu = () => {
-  const [resInfo, setResInfo] = useState(null);
   const { resId } = useParams();
-
-  useEffect(() => {
-    fecthMenu();
-  }, []);
-
-  const fecthMenu = async () => {
-    const data = await fetch(MENU_API + resId);
-    const json = await data.json();
-    console.log(json.data.cards[0].card.card.info);
-    setResInfo(json.data);
-  };
-
+  const resInfo = useRestoMenu(resId);
   if (resInfo === null) return <Shimmer />;
   const info = resInfo?.cards[0]?.card?.card.info;
   const {
@@ -36,11 +23,12 @@ const RestoMenu = () => {
     areaName,
     aggregatedDiscountInfo,
     aggregatedDiscountInfoV2,
-    veg,
-  } = resInfo?.cards[0]?.card?.card.info;
+    veg = false,
+  } = resInfo?.cards[0]?.card?.card.info || {};
 
-  const { itemCards, title } =
-    resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
+  // const { itemCards, title } =
+  //   resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card
+  //     ?.card || {};
 
   const foodArray = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR;
   const menuFooter = foodArray.cards.slice(-2);
@@ -91,7 +79,7 @@ const RestoMenu = () => {
         {veg ? "PURE VEG" : "NON VEG"}
       </p>
       {foodArray.cards.slice(1).map((card, index) => (
-        <div>
+        <div key={card.card.card.title}>
           <Food veg={veg} card={card} />
         </div>
       ))}

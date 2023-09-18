@@ -3,7 +3,6 @@ import "./food.css";
 import FoodCategory from "../foodCategory/FoodCategory";
 
 const Food = ({ card, veg, menuFooter }) => {
-  console.log(card.card.card, "hhhh");
   const { title, itemCards } = card.card.card;
   const [isOpen, setIsOpen] = useState(false);
 
